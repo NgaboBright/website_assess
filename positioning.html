@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display & Positioning Explained</title>
+    <link rel="stylesheet" href="styles.css">
+       
+   
+</head>
+<body>
+    <header>
+       <h1>display & positioning page
+       </h1>
+        <nav>
+            <ul>
+                <li><a href="table.html">Table Tags</a></li>
+                <li><a href="list.html">List Tags</a></li>
+                <li><a href="form.html">Form Tags</a></li>
+                <li><a href="formatting.html">Formatting Tags</a></li>
+                <li><a href="frame.html">Frame Tags</a></li>
+                <li><a href="grouping.html">Grouping Tags</a></li>
+                <li><a href="media.html">Media Tags</a></li>
+                <li><a href="boxmodel.html">CSS Box Model</a></li>
+                <li><a href="visualrules.html">Visual Rules</a></li>
+                <li><a href="positioning.html">CSS Positioning</a></li>
+                <li><a href="mediaquery.html">Media Query Rules</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </nav>
+</header>
+    <h1>CSS Display & Positioning Explained</h1>
+
+    <!-- Display Examples -->
+    <div class="section">
+        <h2>Display Property</h2>
+        <p><strong>block:</strong> Takes full width and starts on a new line.</p>
+        <div class="example block-example">Block Example</div>
+
+        <p><strong>inline:</strong> Takes only the space needed, no new line.</p>
+        <span class="example inline-example">Inline Example</span>
+
+        <p><strong>inline-block:</strong> Respects width/height but stays inline.</p>
+        <div class="example inline-block-example">Inline-Block</div>
+
+        <p><strong>flex:</strong> Arranges items in a flexible row/column.</p>
+        <div class="flex-container">
+            <div class="example">Flex 1</div>
+            <div class="example">Flex 2</div>
+            <div class="example">Flex 3</div>
+        </div>
+
+        <p><strong>grid:</strong> Arranges elements in rows & columns.</p>
+        <div class="grid-container">
+            <div class="example">Grid 1</div>
+            <div class="example">Grid 2</div>
+            <div class="example">Grid 3</div>
+        </div>
+    </div>
+
+    <!-- Positioning Examples -->
+    <div class="section">
+        <h2>Position Property</h2>
+
+        <p><strong>relative:</strong> Moves relative to its normal position.</p>
+        <div class="example relative-example">Relative Example</div>
+
+        <p><strong>absolute:</strong> Positioned relative to its nearest positioned ancestor.</p>
+        <div class="absolute-container">
+            <div class="example absolute-example">Absolute Example</div>
+        </div>
+
+        <p><strong>fixed:</strong> Stays in place even when scrolling.</p>
+        <div class="example fixed-example">Fixed Example</div>
+
+        <p><strong>sticky:</strong> Sticks at the top when scrolling down.</p>
+        <div class="example sticky-example">Sticky Example (Scroll down!)</div>
+
+        <div style="height: 800px;"></div> <!-- Space to enable scrolling -->
+    </div>
+
+</body>
+</html>

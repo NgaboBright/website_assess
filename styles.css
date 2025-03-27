@@ -1,0 +1,296 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Offset for fixed header */
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #555;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #777;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 150px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #555;
+    color: white;
+}
+
+/* List Styling */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Media and Iframe */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 10px;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Box Model Demo */
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 10px auto;
+    background: #ddd;
+}
+
+/* Positioning Demo */
+.relative-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background: #f4a261;
+    padding: 10px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2a9d8f;
+    padding: 10px;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+html, body {
+    height: 100%;
+    overflow: auto;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.section {
+    background: white;
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.example {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Display Examples */
+.block-example {
+    display: block;
+    width: 100%;
+}
+
+.inline-example {
+    display: inline;
+    background-color: lightcoral;
+}
+
+.inline-block-example {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: lightgreen;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Positioning Examples */
+.relative-example {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    background-color: lightgreen;
+}
+
+.absolute-container {
+    position: relative;
+    height: 150px;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.absolute-example {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: orange;
+}
+
+.fixed-example {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+.sticky-example {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 10px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+   
+}
